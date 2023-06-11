@@ -15,38 +15,110 @@
                    WidthRequest="300"
                    HorizontalOptions="Center"
                    Source="add.png"/>
-            <AbsoluteLayout Margin="0, 10, 0, 0">
-                <Entry x:Name="txtAnimalCode" Margin="15, 0, 0, 0"
-                       AbsoluteLayout.LayoutBounds="0, 0, 1, 40"
-                       AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
-                       Placeholder="Animal Code" 
-                       HorizontalOptions="FillAndExpand"
-                       FontSize="12"/>
-                <Entry x:Name="txtCharacteristics" Margin="15, 0, 0, 0"
-                       AbsoluteLayout.LayoutBounds="0, 50, 1, 40"
-                       AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
-                       Placeholder="Characteristics" 
-                       HorizontalOptions="FillAndExpand"
-                       FontSize="12"/>
-                <Entry x:Name="txtSpecies"  Margin="15, 0, 0, 0"
-                       AbsoluteLayout.LayoutBounds="0, 100, 1, 40"
-                       AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
-                       Placeholder="Species" 
-                       HorizontalOptions="FillAndExpand"
-                       FontSize="12"/>
-                <Entry x:Name="txtHabitat" Margin="15, 0, 0, 0"
-                       AbsoluteLayout.LayoutBounds="0, 150, 1, 40"
-                       AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
-                       Placeholder="Habitat" 
-                       HorizontalOptions="FillAndExpand"
-                       FontSize="12"/>
-                <Entry x:Name="txtThreat" Margin="15, 0, 0, 0"
-                       AbsoluteLayout.LayoutBounds="0, 200, 1, 40"
-                       AbsoluteLayout.LayoutFlags="XProportional, WidthProportional"
-                       Placeholder="Threat" 
-                       HorizontalOptions="FillAndExpand"
-                       FontSize="12"/>
-            </AbsoluteLayout>
+            <Grid Margin="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       Text="Animal Code"
+                       FontSize="14"
+                       FontAttributes="Bold"
+                       Margin="5, 0"/>
+                <Frame Grid.Row="1"
+                       Padding="0"
+                       CornerRadius="5"
+                       BackgroundColor="#F2F2F2"
+                       HasShadow="False">
+                    <Entry x:Name="txtAnimalCode"
+                           Placeholder="Enter Animal Code" 
+                           FontSize="14"
+                           BackgroundColor="Transparent"
+                           IsTextPredictionEnabled="False"
+                           TextColor="Black"
+                           HeightRequest="40"/>
+                </Frame>
+                <Label Grid.Row="2"
+                       Text="Characteristics"
+                       FontSize="14"
+                       FontAttributes="Bold"
+                       Margin="5, 0"/>
+                <Frame Grid.Row="3"
+                       Padding="0"
+                       CornerRadius="5"
+                       BackgroundColor="#F2F2F2"
+                       HasShadow="False">
+                    <Entry x:Name="txtCharacteristics"
+                           Placeholder="Enter Characteristics" 
+                           FontSize="14"
+                           BackgroundColor="Transparent"
+                           IsTextPredictionEnabled="False"
+                           TextColor="Black"
+                           HeightRequest="40"/>
+                </Frame>
+                <Label Grid.Row="4"
+                       Text="Species"
+                       FontSize="14"
+                       FontAttributes="Bold"
+                       Margin="5, 0"/>
+                <Frame Grid.Row="5"
+                       Padding="0"
+                       CornerRadius="5"
+                       BackgroundColor="#F2F2F2"
+                       HasShadow="False">
+                    <Entry x:Name="txtSpecies"
+                           Placeholder="Enter Species" 
+                           FontSize="14"
+                           BackgroundColor="Transparent"
+                           IsTextPredictionEnabled="False"
+                           TextColor="Black"
+                           HeightRequest="40"/>
+                </Frame>
+                <Label Grid.Row="6"
+                       Text="Habitat"
+                       FontSize="14"
+                       FontAttributes="Bold"
+                       Margin="5, 0"/>
+                <Frame Grid.Row="7"
+                       Padding="0"
+                       CornerRadius="5"
+                       BackgroundColor="#F2F2F2"
+                       HasShadow="False">
+                    <Entry x:Name="txtHabitat"
+                           Placeholder="Enter Habitat" 
+                           FontSize="14"
+                           BackgroundColor="Transparent"
+                           IsTextPredictionEnabled="False"
+                           TextColor="Black"
+                           HeightRequest="40"/>
+                </Frame>
+                <Label Grid.Row="8"
+                       Text="Threat"
+                       FontSize="14"
+                       FontAttributes="Bold"
+                       Margin="5, 0"/>
+                <Frame Grid.Row="9"
+                       Padding="0"
+                       CornerRadius="5"
+                       BackgroundColor="#F2F2F2"
+                       HasShadow="False">
+                    <Entry x:Name="txtThreat"
+                           Placeholder="Enter Threat" 
+                           FontSize="14"
+                           BackgroundColor="Transparent"
+                           IsTextPredictionEnabled="False"
+                           TextColor="Black"
+                           HeightRequest="40"/>
+                </Frame>
+            </Grid>
             <AbsoluteLayout>
                 <Button Margin="295, 25, 0, 0"
                         Text="ADD ANIMAL"
