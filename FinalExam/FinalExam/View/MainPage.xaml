@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam.View.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#EFDDA5">
+            <Image Source="lp3.png"
+                   HeightRequest="650"
+                   WidthRequest="650"
+                   VerticalOptions="CenterAndExpand"/>
+            <AbsoluteLayout Margin="135, -60, 30, 50">
+                <Button Text="Explore Now"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        WidthRequest="150"
+                        CornerRadius="25"
+                        Clicked="ListAnimal">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#B28E5D" Offset="0.1" />
+                            <GradientStop Color="#AD8650" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
